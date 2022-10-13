@@ -9,9 +9,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list list;
-
+	
 	va_start(list, n);
-
+	
 	for (i = 0; i < n; i++)
 	{
 		if (!separator)
@@ -23,6 +23,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	
 	va_end(list);
-
 	printf("\n");
 }
